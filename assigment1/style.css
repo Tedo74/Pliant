@@ -90,9 +90,10 @@ ul.nav {
   margin-left: auto;
 }
 ul.nav li {
-  padding-left: 0.3em;
+  padding-left: 2em;
 }
 ul.nav a {
+  font-size: 1.1em;
   padding: 1em 0 1em 0.5em;
   position: relative;
 }
@@ -100,9 +101,9 @@ ul.nav a.active::after {
   content: '';
   width: 90%;
   height: 2px;
-  background-color: whitesmoke;
+  background-color: #dadada;
   position: absolute;
-  top: 3.7em;
+  top: 3.5em;
   left: 0.5em;
 }
 
@@ -112,7 +113,7 @@ ul.nav a:hover::after {
   height: 2px;
   background-color: rgb(16, 158, 87);
   position: absolute;
-  top: 3.7em;
+  top: 3.5em;
   left: 0.5em;
 }
 
@@ -122,7 +123,7 @@ ul.nav a.active:hover::after {
   height: 2px;
   background-color: whitesmoke;
   position: absolute;
-  top: 3.7em;
+  top: 3.5em;
   left: 0.5em;
 }
 
