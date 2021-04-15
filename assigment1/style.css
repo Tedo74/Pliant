@@ -213,19 +213,19 @@ ul.nav a.active:hover::after {
 
 .user a {
   color: var(--primary-color);
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .login,
 .register {
-  padding: 2.5em 0;
+  padding: 3em 0;
   text-align: center;
 }
 
 .login {
   width: 51%;
   background-color: #24444c;
-  clip-path: polygon(0 0, 100% 0, 99% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 98% 100%, 0 100%);
   /* position: absolute;
   top: 0;
   left: 0; */
@@ -236,7 +236,26 @@ ul.nav a.active:hover::after {
   background-color: #00b76c;
   position: absolute;
   top: 0;
-  left: 51%;
+  left: 50%;
   z-index: 0;
-  clip-path: polygon(1% 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(2% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* ABOUT SECTION */
+.about {
+  display: flex;
+  padding: 5em 8em;
+}
+.about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 40%;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.heading-normal {
+  font-weight: normal;
 }
