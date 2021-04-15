@@ -232,7 +232,7 @@ ul.nav a.active:hover::after {
   z-index: 1;
 }
 .register {
-  width: 51%;
+  width: 50%;
   background-color: #00b76c;
   position: absolute;
   top: 0;
@@ -244,9 +244,10 @@ ul.nav a.active:hover::after {
 /* ABOUT SECTION */
 .about {
   display: flex;
-  padding: 5em 8em;
+  padding: 4em;
 }
 .about-info {
+  flex: 1 1 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -255,7 +256,53 @@ ul.nav a.active:hover::after {
   text-align: justify;
   text-justify: inter-word;
 }
+.about-info h3 {
+  padding-bottom: 0.6em;
+}
 
 .heading-normal {
   font-weight: normal;
+}
+
+.team-members {
+  flex: 1 1 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4em;
+  border-left: 3px dotted #c3c3c3;
+  margin-left: 4em;
+}
+
+.user-card {
+  /* border: 1px solid black; */
+  padding: 0.5em 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+.user-card h6 {
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+}
+.user-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 5px solid #c3c3c3;
+  border-radius: 50%;
+}
+.user-card .img-container {
+  width: 100%;
+}
+
+.social {
+  width: 100%;
+  padding-top: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
