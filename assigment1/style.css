@@ -288,6 +288,9 @@ ul.nav a.active:hover::after {
   padding: 0;
   margin: 0;
 }
+.user-card p {
+  color: #8a8a8a;
+}
 .user-card img {
   display: block;
   width: 100%;
@@ -305,4 +308,13 @@ ul.nav a.active:hover::after {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: #8a8a8a;
+}
+
+.social .fa-link {
+  transform: scaleX(-1);
+}
+
+.social .active {
+  color: #00663c;
 }
