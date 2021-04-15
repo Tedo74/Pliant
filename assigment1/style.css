@@ -111,7 +111,7 @@ ul.nav a:hover::after {
   content: '';
   width: 90%;
   height: 2px;
-  background-color: rgb(16, 158, 87);
+  background-color: #00b76c;
   position: absolute;
   top: 3.5em;
   left: 0.5em;
@@ -201,4 +201,42 @@ ul.nav a.active:hover::after {
   font-size: 1.4em;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
+}
+
+/* USER SECTION */
+.user {
+  width: 100%;
+  display: flex;
+  background-color: #24444c;
+  position: relative;
+}
+
+.user a {
+  color: var(--primary-color);
+  font-size: 1.2em;
+}
+
+.login,
+.register {
+  padding: 2.5em 0;
+  text-align: center;
+}
+
+.login {
+  width: 51%;
+  background-color: #24444c;
+  clip-path: polygon(0 0, 100% 0, 99% 100%, 0 100%);
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  z-index: 1;
+}
+.register {
+  width: 51%;
+  background-color: #00b76c;
+  position: absolute;
+  top: 0;
+  left: 51%;
+  z-index: 0;
+  clip-path: polygon(1% 0, 100% 0, 100% 100%, 0 100%);
 }
