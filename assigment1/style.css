@@ -155,15 +155,18 @@ ul.nav a.active:hover::after {
   color: var(--primary-color);
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.main-info h1 {
+  font-size: 3.5em;
 }
 .main-info h3 {
   font-family: 'PT Serif', serif;
   font-weight: 400;
   padding-top: 0;
-  font-size: 1.4em;
+  font-size: 1.8em;
 }
 .main-nav {
   width: 80%;
