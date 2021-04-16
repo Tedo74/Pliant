@@ -275,7 +275,7 @@ ul.nav a.active:hover::after {
   margin-left: 4em;
 }
 
-.user-card {
+.member-card {
   /* border: 1px solid black; */
   padding: 0.5em 1em;
   display: flex;
@@ -283,22 +283,22 @@ ul.nav a.active:hover::after {
   align-items: center;
   padding: 1em;
 }
-.user-card h6 {
+.member-card h6 {
   font-size: 1em;
   padding: 0;
   margin: 0;
 }
-.user-card p {
+.member-card p {
   color: #8a8a8a;
 }
-.user-card img {
+.member-card img {
   display: block;
   width: 100%;
   height: auto;
   border: 5px solid #c3c3c3;
   border-radius: 50%;
 }
-.user-card .img-container {
+.member-card .img-container {
   width: 100%;
 }
 
@@ -317,4 +317,73 @@ ul.nav a.active:hover::after {
 
 .social .active {
   color: #00663c;
+}
+
+/* carousel */
+
+.carousel {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.image-container {
+  width: 100%;
+  height: 300px;
+  background-color: #6294ff;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonials img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  opacity: 0;
+  transition: all 1.2s ease-in-out;
+}
+
+.testimonials img.active {
+  opacity: 1;
+  /* transition: all 2.5s ease-in; */
+}
+
+.buttons-container {
+  z-index: 2;
+  /* background-color: sandybrown; */
+  position: absolute;
+  top: 80%;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  /* align-items: center; */
+  margin: 0 100px;
+}
+
+.testimonials .btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7a7a7a;
+}
+
+.testimonials .btn.active {
+  background-color: #fff;
+}
+
+.testimonials .btn:hover {
+  opacity: 0.7;
 }
