@@ -358,8 +358,8 @@ ul.nav a.active:hover::after {
   left: 0;
   display: block;
   width: 100%;
-  height: auto;
-  object-fit: contain;
+  height: 300px;
+  object-fit: cover;
   opacity: 0;
   transition: all 1.2s ease-in-out;
 }
@@ -378,7 +378,7 @@ ul.nav a.active:hover::after {
   transform: translateX(-50%);
   /* width: 220px; */
   display: flex;
-  /* justify-content: space-around; */
+  justify-content: center;
   align-items: center;
 }
 
@@ -391,15 +391,23 @@ ul.nav a.active:hover::after {
   border-right: 1px solid #dfdfdf;
   color: var(--primary-color);
   margin-right: 0.5em;
-  width: 200px;
+  position: relative;
+  /* background-color: darkorange; */
+  width: 180px;
+  height: 30px;
 }
 
 .member-quotation-name h6 {
-  padding: 0 1em;
-  padding: 0 1em;
-  margin-left: 0.5em;
   font-size: 1.2em;
   text-align: right;
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  opacity: 0;
+}
+.member-quotation-name h6.active-member {
+  opacity: 1;
+  transition: opacity 1.2s ease-in;
 }
 
 .testimonials .btn {
@@ -410,9 +418,6 @@ ul.nav a.active:hover::after {
   height: 20px;
   border-radius: 50%;
   border: 3px solid #ffffff;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   background-color: #7a7a7a;
   margin: 0.5em;
 }
@@ -437,7 +442,6 @@ ul.nav a.active:hover::after {
   font-weight: 400;
   text-align: center;
   opacity: 0;
-  /* transition: opacity 1.2s ease-in; */
 }
 
 .carousel-text.active-text {
