@@ -104,3 +104,10 @@ btns.forEach((button, index) => {
 //       break;
 //   }
 // }
+
+// toogle nav menu
+const burgerMenu = document.querySelector('.burger-menu');
+const nav = document.querySelector('ul.nav');
+burgerMenu.addEventListener('click', () => {
+  nav.classList.toggle('show-nav');
+});
