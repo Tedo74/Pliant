@@ -81,6 +81,10 @@ h6 {
   font-size: 1.3em;
 }
 
+.burger-menu {
+  display: none;
+}
+
 ul {
   list-style-type: none;
 }
@@ -592,9 +596,6 @@ ul.nav a.active:hover::after {
 }
 
 @media (max-width: 1100px) {
-  .burger-menu {
-    display: none;
-  }
   .footer {
     flex-direction: column;
     flex-wrap: nowrap;
