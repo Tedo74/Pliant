@@ -129,6 +129,7 @@ ul.nav a.active:hover::after {
 
 .header {
   width: 100%;
+  padding: 0 7em;
   height: 60vh;
   position: relative;
   color: white;
@@ -170,7 +171,7 @@ ul.nav a.active:hover::after {
   font-size: 1.8em;
 }
 .main-nav {
-  width: 80%;
+  /* width: 80%; */
   margin: 0 auto;
   padding: 1em 0;
   display: flex;
@@ -244,7 +245,7 @@ ul.nav a.active:hover::after {
 /* ABOUT SECTION */
 .about {
   display: flex;
-  padding: 4em;
+  padding: 4em 6em;
 }
 .about-info {
   flex: 1 1 40%;
@@ -255,6 +256,7 @@ ul.nav a.active:hover::after {
   width: 40%;
   text-align: justify;
   text-justify: inter-word;
+  padding-left: 1em;
 }
 .about-info h3 {
   padding-bottom: 0.6em;
@@ -267,10 +269,10 @@ ul.nav a.active:hover::after {
 .team-members {
   flex: 1 1 60%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 4em;
+  padding: 0 1em 0 4em;
   border-left: 3px dotted #c3c3c3;
   margin-left: 4em;
 }
@@ -453,8 +455,8 @@ ul.nav a.active:hover::after {
 .servers-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 4em;
+  justify-content: space-between;
+  padding: 4em 6em;
 }
 
 .server-card {
@@ -463,11 +465,12 @@ ul.nav a.active:hover::after {
   align-items: center;
   width: 200px;
   text-align: center;
+  padding: 1em;
 }
 
 .server-type {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background-color: #edcd00;
   border-radius: 50%;
   display: flex;
@@ -488,5 +491,28 @@ ul.nav a.active:hover::after {
   color: var(--primary-color);
 }
 .server-card p {
+  color: #8a8a8a;
+}
+
+/* footer */
+
+.footer {
+  padding: 4em 6em;
+  background-color: #2e2e2e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #8a8a8a;
+}
+.footer-design {
+  flex: 0 1 33%;
+  padding: 1em;
+}
+.footer-links {
+  display: flex;
+  padding: 1em;
+}
+.footer a {
   color: #8a8a8a;
 }
