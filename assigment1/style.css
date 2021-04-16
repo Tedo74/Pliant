@@ -39,7 +39,7 @@ textarea {
   font: inherit;
 }
 body {
-  background-color: #dfdfdf;
+  background-color: #f3f3f3;
 }
 
 a {
@@ -447,4 +447,46 @@ ul.nav a.active:hover::after {
 .carousel-text.active-text {
   opacity: 1;
   transition: opacity 1.2s ease-in;
+}
+
+/* servers */
+.servers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 4em;
+}
+
+.server-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  text-align: center;
+}
+
+.server-type {
+  width: 100px;
+  height: 100px;
+  background-color: #edcd00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.server-card:nth-of-type(2) .server-type {
+  background-color: #25a5f3;
+}
+.server-card:nth-of-type(3) .server-type {
+  background-color: #92a4a5;
+}
+.server-card:nth-of-type(4) .server-type {
+  background-color: #f84000;
+}
+.server-type i {
+  color: var(--primary-color);
+}
+.server-card p {
+  color: #8a8a8a;
 }
