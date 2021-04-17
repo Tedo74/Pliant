@@ -84,6 +84,30 @@ h6 {
 .burger-menu {
   display: none;
 }
+.fa-ghost {
+  position: relative;
+  top: 0;
+  left: 0;
+  animation: ghost 6s ease-in-out 5s infinite;
+}
+@keyframes ghost {
+  25% {
+    left: 80px;
+    opacity: 0;
+  }
+  50% {
+    left: 0px;
+    opacity: 0.3;
+  }
+  75% {
+    left: 0px;
+    opacity: 1;
+  }
+  100% {
+    left: 0px;
+    opacity: 1;
+  }
+}
 
 ul {
   list-style-type: none;
