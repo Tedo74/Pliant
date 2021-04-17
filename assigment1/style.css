@@ -860,6 +860,9 @@ ul.nav a.active:hover::after {
 }
 
 @media (max-width: 300px) {
+  .carousel-text {
+    font-size: 0.8em;
+  }
   .footer-links-wrapper {
     flex-direction: column;
     align-items: flex-start;
