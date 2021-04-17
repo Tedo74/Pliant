@@ -88,7 +88,7 @@ h6 {
   position: relative;
   top: 0;
   left: 0;
-  animation: ghost 6s ease-in-out 5s infinite;
+  animation: ghost 6s ease-in-out 2s infinite;
 }
 @keyframes ghost {
   25% {
@@ -792,9 +792,6 @@ ul.nav a.active:hover::after {
 
   .footer-contactsbody {
     font-size: 0.6rem;
-  }
-  .footer-contacts span.mail {
-    display: none;
   }
 }
 
