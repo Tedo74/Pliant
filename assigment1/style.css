@@ -731,14 +731,36 @@ ul.nav a.active:hover::after {
     cursor: pointer;
     /* padding: 1em; */
   }
+
   ul.nav.show-nav {
     display: block;
     position: absolute;
-    top: 36px;
-    left: -15px;
+    top: 30px;
+    left: -10px;
     font-size: 1.3em;
     z-index: 3;
     line-height: 180%;
+    opacity: 0.9;
+  }
+  ul.nav.show-nav li {
+    background-color: #2e2e2e;
+    padding: 0.5em 0.2em;
+    border-bottom: 1px solid #dfdfdf;
+    width: 160px;
+  }
+  ul.nav.show-nav li:first-child {
+    border-top-left-radius: 0.4em;
+    border-top-right-radius: 0.4em;
+  }
+  ul.nav.show-nav li:last-child {
+    border: none;
+    border-bottom-left-radius: 0.4em;
+    border-bottom-right-radius: 0.4em;
+  }
+  ul.nav.show-nav a {
+    display: block;
+    width: 100%;
+    padding: 0.5em 1em;
   }
   ul.nav.show-nav a:hover {
     color: yellowgreen;
@@ -796,6 +818,16 @@ ul.nav a.active:hover::after {
 }
 
 @media (max-width: 300px) {
+  ul.nav.show-nav {
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: -70px;
+    font-size: 1.3em;
+    z-index: 3;
+    line-height: 180%;
+    opacity: 0.9;
+  }
   .footer-links-wrapper {
     flex-direction: column;
     align-items: flex-start;
