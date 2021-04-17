@@ -803,17 +803,19 @@ ul.nav a.active:hover::after {
     position: absolute;
     top: 0;
     right: 0;
+    transform: translateX(50%);
   }
   .fa-bars {
     position: absolute;
     top: 28px;
-    right: 11px;
+    right: 0px;
+    transform: translateX(50%);
   }
   ul.nav.show-nav {
     display: block;
     position: absolute;
     top: 57px;
-    left: -90px;
+    left: -75px;
     font-size: 1.3em;
     z-index: 3;
     line-height: 180%;
