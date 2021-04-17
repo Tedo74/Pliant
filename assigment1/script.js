@@ -110,14 +110,15 @@ const burgerMenu = document.querySelector('.burger-menu');
 const nav = document.querySelector('ul.nav');
 burgerMenu.addEventListener('click', () => {
   nav.classList.toggle('show-nav');
+  burgerMenu.classList.toggle('burger-open');
   let li = nav.children;
   li = Array.from(li);
-  li.forEach((l) => (l.style.display = 'none'));
+  li.forEach((l) => l.classList.add('li-hide'));
   if (nav.classList.contains('show-nav')) {
     for (let i = 0; i < li.length; i++) {
       setTimeout(() => {
-        li[i].style.display = 'block';
-      }, i * 250);
+        li[i].classList.remove('li-hide');
+      }, (i + 1) * 250);
     }
   }
 });
