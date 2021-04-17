@@ -110,4 +110,14 @@ const burgerMenu = document.querySelector('.burger-menu');
 const nav = document.querySelector('ul.nav');
 burgerMenu.addEventListener('click', () => {
   nav.classList.toggle('show-nav');
+  let li = nav.children;
+  li = Array.from(li);
+  li.forEach((l) => (l.style.display = 'none'));
+  if (nav.classList.contains('show-nav')) {
+    for (let i = 0; i < li.length; i++) {
+      setTimeout(() => {
+        li[i].style.display = 'block';
+      }, i * 250);
+    }
+  }
 });
