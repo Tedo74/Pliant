@@ -395,7 +395,7 @@ ul.nav a.active:hover::after {
   display: block;
   width: 100%;
   height: 300px;
-  object-fit: fill;
+  object-fit: cover;
   opacity: 0;
   transition: all 1.2s ease-in-out;
 }
